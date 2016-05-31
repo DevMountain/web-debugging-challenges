@@ -1,0 +1,15 @@
+// This is dummy data you can use for the User model
+
+[{
+  "email": "doh@msn.com",
+  "username": "homersimpson2000",
+  "level": 98,
+  "location": "Springfield",
+  "member": true
+},{
+  "email": "da.swamp@crocs.com",
+  "username": "ridnick1",
+  "level": 2,
+  "location": "Louisiana",
+  "member": false
+}]

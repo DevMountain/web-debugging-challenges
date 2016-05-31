@@ -1,0 +1,44 @@
+// This is dummy data you can use for the Sighting model on the first day.
+
+[{
+  "name": "red breasted merganser",
+  "order": "Anseriformes",
+  "status": "least concern",
+  "confirmed": true,
+  "numberSeen": 2
+},
+{
+  "name": "cedar waxwing",
+  "order": "Passeriformes",
+  "status": "least concern",
+  "confirmed": false,
+  "numberSeen": 5
+},
+{
+  "name": "osprey",
+  "order": "Accipitriformes",
+  "status": "least concern",
+  "confirmed": true,
+  "numberSeen": 2
+},
+{
+  "name": "snowy plover",
+  "order": "Charadriformes",
+  "status": "least concern",
+  "confirmed": true,
+  "numberSeen": 7
+},
+{
+  "name": "passenger pigeon",
+  "order": "Columbiformes",
+  "status": "extinct",
+  "confirmed": false,
+  "numberSeen": 1
+},
+{
+  "name": "greater sage grouse",
+  "order": "GALLIFORMES",
+  "status": "near threatened",
+  "confirmed": true,
+  "numberSeen": 2
+}]
