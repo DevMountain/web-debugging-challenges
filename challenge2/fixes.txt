@@ -1,0 +1,61 @@
+1) cannot find module 'express'
+ - npm install
+2) Error: Route.get() requires callback functions but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/jared/projects/repos/forks/DevMtn/web-debugging-challenges-1/challenge2/node_modules/express/lib/router/route.js:196:15)
+    at EventEmitter.app.(anonymous function) [as get] (/Users/jared/projects/repos/forks/DevMtn/web-debugging-challenges-1/challenge2/node_modules/express/lib/application.js:481:19)
+    at Object.<anonymous> (/Users/jared/projects/repos/forks/DevMtn/web-debugging-challenges-1/challenge2/server.js:20:5)
+    - corrected spelling of "SigntingCtrl.raed" to "SightingCtrl.read"
+3) Imported sample data into mongodb
+  Testing CRUD
+
+  GET User
+  [
+  {
+    "_id": "579265afde623b87554487a9",
+    "email": "doh@msn.com",
+    "username": "homersimpson2000",
+    "level": 98,
+    "location": "Springfield",
+    "member": true
+  },
+  {
+    "_id": "579265afde623b87554487aa",
+    "email": "da.swamp@crocs.com",
+    "username": "ridnick1",
+    "level": 2,
+    "location": "Louisiana",
+    "member": false
+  }
+]
+POST User
+{
+  "__v": 0,
+  "email": "jared@msn.com",
+  "username": "jared",
+  "level": 100,
+  "location": "earth",
+  "_id": "5792667c8e3104a3870b4820",
+  "member": true
+}
+
+PUT User
+{
+  "_id": "5792667c8e3104a3870b4820",
+  "email": "jared@msn.com",
+  "username": "Jared Peterson",
+  "level": 100,
+  "location": "Planet Earth",
+  "__v": 0,
+  "member": true
+}
+DELETE User
+success
+{
+  "_id": "5792667c8e3104a3870b4820",
+  "email": "jared@msn.com",
+  "username": "Jared Peterson",
+  "level": 100,
+  "location": "Planet Earth",
+  "__v": 0,
+  "member": true
+}
