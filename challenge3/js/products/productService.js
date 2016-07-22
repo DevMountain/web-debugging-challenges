@@ -1,7 +1,9 @@
 angular.module('miniRouting')
 
 .service('productService', function(){
-  var shoeData = [
+	// should not be var. should be this.shoeData
+	// I first checked the view for any errors. then checked the controller. added console.logs everywhere to make sure i was getting into the right spot. then i checked why i wasnt getting data from the service
+  this.shoeData = [
     {
       type: 'Nike',
       color: 'Red',
@@ -24,7 +26,7 @@ angular.module('miniRouting')
     }
   ];
 
-  var sockData = [
+  this.sockData = [
     {
       type: 'Stance',
       color: 'Red',
