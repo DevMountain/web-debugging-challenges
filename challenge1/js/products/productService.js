@@ -1,6 +1,4 @@
-angular.module('miniRouting')
-
-.service('productService', function(){
+angular.module('miniRouting').service('productService', function(){
   this.shoeData = [
     {
       type: 'Nike',
@@ -23,7 +21,9 @@ angular.module('miniRouting')
       size: 7
     }
   ];
-
+  this.retrieveShoeData = function(){
+    return this.shoeData
+  }
   this.sockData = [
     {
       type: 'Stance',
@@ -41,4 +41,7 @@ angular.module('miniRouting')
       size: 'L'
     },
   ];
+  this.retrieveSockData = function(){
+    return this.sockData
+  }
 });

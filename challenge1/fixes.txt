@@ -1,0 +1,15 @@
+* You must include what the bug was, what steps you took to find the bug, how you solved it.
+1.Misplaced curly and closing parenthesis on App.js. Was reading the code to familiarize myself and saw the mistake.
+2.Missing curly at line 9 to close function. Saw error on chrome debugger.
+3.Index.html missing > closing script on line 32. Was reading through to make sure script calls were correct.
+4.Index.html scripts added ./ in front of all folders to clarify that it's going into each folder. Was reading through to make sure script calls were correct.
+5.App.js updated 'ui-router' to 'ui.router'.
+6.App.js removed extra line before .config. Mostly just for my preference
+7.App.js all .state's needed to have the extra closing parenthesis next to the route name replaced with a comma.
+8.App.js fixed camelCase on settingsCtrl. Noticed on read through.
+9.App.js added ./ to all file routes. Noticed on read through.
+10.App.js added $urlRouterProvider and set to default home.
+11.productsCtrl injected productService to module.
+12.productService added functions to return the data objects to the controller
+13.ProductsCtrl updated data calls to reference the functions on the serviec to return the data objects.
+14.Index.htm added = to ng-app 
