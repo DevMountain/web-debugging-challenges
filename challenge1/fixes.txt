@@ -5,7 +5,7 @@ productsCtrl.js - unexpected token ) line 9
 
 Module 'miniRouting' is not available! - homeCtrl, productsCtrl, settingsCtrl, productService - line 1
 
-              resolved -
+              resolved - I have no Idea. searched for 45 minutes found no reason. Probably something really dumb. 
 
 App.js needed closing })
-App.js states were closing paraments to early and needed commas, resolved on all. 
+App.js states were closing paraments to early and needed commas, resolved on all.
