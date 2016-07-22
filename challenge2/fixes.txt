@@ -1,0 +1,11 @@
+    FIXES
+1 -
+    npm install
+
+2 - run mongod
+
+3 -
+    server.js
+
+4 -
+    server.js

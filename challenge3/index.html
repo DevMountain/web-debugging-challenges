@@ -9,15 +9,17 @@
 
 <body>
     <div class="menu">
-        <ul>
-            <li><a ui-sref="home">Home</a></li>
-            <li>
-                Products
-                <ul>
-                    <li><a ui-sref="product({id: 'shoes'})">Shoes</a></li>
-                    <li><a ui-sref="product({id: 'socks'})">Socks</a></li>
-                </ul>
-            </li>
+      <ul>
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="products">Products</a>
+            <!-- /////////////
+            /// 2 FIX UI-SREF, SHOULD HAVE NAME OF STATE ///////
+            //////////// -->
+              <ul>
+                <li><a ui-sref="products">Shoes</a></li>
+                <li><a ui-sref="products">Socks</a></li>
+              </ul>
+
             <li><a ui-sref="settings"> Settings </a></li>
         </ul>
     </div>
