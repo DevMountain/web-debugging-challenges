@@ -1,0 +1,26 @@
+What: Failed to load resource: the server responded with a status of 404 (Not Found)
+      http://127.0.0.1:8080/js/home/homeTemplate.html
+
+Steps: 1. familiarized self with files. looked for js/home/homeTemplate.html
+        2. found instead homeTmpl.html
+fix: changed the route on app.js to homeTmp.html instead of homeTemplate.html
+
+
+What: Products cannot be clicked;
+
+Steps: looked at routes in app.js
+      looked at index.html
+      looked at uisref tags
+      saw product the params
+      compared to app.js
+      app.js had state as products not product
+
+fix: changed it to products in index.html
+
+
+
+what: settings gives an error simular to home
+
+steps: looked at routes in app.js and checked for template instead of templateUrl
+
+fix: changed all templates to tmpl instead of template
