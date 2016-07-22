@@ -41,4 +41,13 @@ angular.module('miniRouting')
       size: 'L'
     },
   ];
+
+this.shoeData = function(){
+  return shoeData;
+}
+this.sockData = function(){
+  return sockData;
+}
+
+
 });

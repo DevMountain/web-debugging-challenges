@@ -1,0 +1,2 @@
+Had to NPM install all of the dependencies.
+SightingCtrl.raed changed to SightingCtrl.read.
