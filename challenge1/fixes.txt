@@ -1,0 +1,21 @@
+
+
+BUG: States not set up correctly
+FIX: state names wrapped in parentheses() had closing ) change to comma. closing }) for angular module sitting in middle of states moved down to the bottom
+
+
+BUG: Module not available. Mispelled or forgot to load.
+FIX: HTML tag changed from ng-app"miniRouting" to ng-app="miniRouting" (added =)
+FIX: Fixed broken script tags on html page for ui-router
+
+BUG: Failed to instatiate ui-router
+FIX: Change ui-router to ui.router
+
+BUG: productsCtrl.js:10 Uncaught SyntaxError: Unexpected token )
+FIX: Added closing } for angular controller
+
+BUG: productservice is not defined
+FIX: Injected productservice as dependency in productcontroller
+
+BUG: settingsctrl is not a function
+FIX: In app routing, fixed settings controller from settingsctrl to settingsCtrl to match controller name

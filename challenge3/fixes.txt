@@ -1,0 +1,12 @@
+BUG: angular.js:10661 GET http://127.0.0.1:53364/challenge3/js/home/homeTemplate.html 404 (Not Found)
+FIX: In home state on app.js router - changed all templateUrl: from stateTemplate.html to stateTmpl.html
+
+BUG: angular.js:12416 Error: Could not resolve 'product' from state ''
+FIX: changed ui-sref on index.html from product to products
+FIX: changed url variable for product state to /:id' from /:productid
+
+
+
+BUG: Product tabs were not pulling in any data
+FIX: Changed variables to this.
+FIX:  on productsCtrl changed $scope.productData = productService.sheoData; so shoe was spelled correctly
