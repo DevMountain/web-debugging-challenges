@@ -1,0 +1,2 @@
+ng-app didn't have an = sign.
+app.js had {} in the wrong spot for all of the states and was missing at the bottom

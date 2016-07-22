@@ -1,0 +1,13 @@
+Fixed various spelling errors in app.js to reflect proper state template links
+Added ui-sref to products on index.html.
+Changed product to products in index.html.
+Changed id to productid for shoes and socks in index.html.
+In productsCtrl changed
+  var productType = $stateParams.id;
+  to
+  var productType = $stateParams.productid;
+In productsCtrl changed
+  productService.sheoData;
+  to
+  productService.shoeData();
+Added a function to return shoeData and sockData in productService.

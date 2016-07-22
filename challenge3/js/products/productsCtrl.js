@@ -1,9 +1,9 @@
 angular.module('miniRouting').controller("productsCtrl", function($scope, $stateParams, productService){
-    var productType = $stateParams.id;
-    
+    var productType = $stateParams.productid;
+
     if(productType === "shoes"){
-        $scope.productData = productService.sheoData;
+        $scope.productData = productService.shoeData();
     } else {
-        $scope.productData = productService.sockData;
+        $scope.productData = productService.sockData();
     }
 });
