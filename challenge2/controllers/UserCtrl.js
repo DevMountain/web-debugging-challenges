@@ -25,8 +25,7 @@ module.exports = {
       function(err, result) {
         if (err) return res.status(500).send(err);
         res.send(result);
-      }
-    );
+      });
   },
 
   delete: function(req, res) {

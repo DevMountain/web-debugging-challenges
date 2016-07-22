@@ -1,0 +1,3 @@
+server.js - read was misspelled in the app.get route. Changed to read.
+package.json - npm installed so all Dependencies and packages present.
+server.js - created, read, updated and deleted user.
