@@ -1,0 +1,25 @@
+Error: [$injector:nomod] Module 'miniRouting' is not available!
+
+- Opened debugger. Saw error. Checked index.html for ng-app. found ng-app"miniRouting"
+  instead of ng-app="miniRouting". Added =
+- Opening script tag for angular ui router in index.html missing closing > after cdn. Closed tag.
+- App.js listed injector dependency as ui-router instead of ui.router. Changed.
+
+
+app.js:6 Uncaught SyntaxError: Unexpected token {
+- Opened app.js line 6. state's closing paranthesis came too soon, replaced with comma.
+  Did the same on lines 11 and 12.
+
+app.js:17 Uncaught TypeError: angular.module(...).config(...).state is not a function.
+- Extra         }) on line 16 which ended the .config early. deleted. Also noticed there was no closing })
+  for .config. Added on line 21.
+
+productsCtrl.js:9 Uncaught SyntaxError: Unexpected token )
+- missing } to close the function. Added  } before ) to resolve.
+
+angular.js:12416 ReferenceError: productService is not defined
+- Checked productsCtrl.js to see if servce was added as dependency. It was nont. Added productService.
+
+Error: [ng:areq] Argument 'settingsctrl' is not a function, got undefined
+- Looked through debugger error. Checked settings folder. Checked index.html. Checked app.js.
+  Noticed that the controller for the settings state in app.js was spelled settingsctrl. Corrected to settingsCtrl

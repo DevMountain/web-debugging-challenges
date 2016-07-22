@@ -1,0 +1,11 @@
+cannot find module express.
+- looked at error in terminal from nodemon. Looked through package.json. Realized there are no
+  nodemodules. npm install for fix
+
+route.get requires call back function
+- nodemon specified server.js line 20. the callback was misspelled. corrected spelling.
+
+cannot send headers after they are sent
+- read through error. /Users/Dan/DevMountain/web-debugging-challenges/challenge2/controllers/SightingCtrl.js:23:25
+  checked sightingctrl line 23. added a return to line 21 for fix. Did the same for the error response on the other
+  crud operations to prevent this error for each.
