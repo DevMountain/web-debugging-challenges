@@ -1,0 +1,11 @@
+# Bug (error) - how i defined them below
+
+1. Fixed ui-router and changed it to ui.router (when injecting a dependency, you add it in the square brackets after you declare you're main module app name.)
+
+2. The opening script for ui router didnt have a closing > (when making an html element, you must close it properly)
+
+3. ON the route names, it had 'NAME') when there is only a comma there(ui.router .state, takes in a state name, and then an object full of that state's instructions)
+
+4. Had an extra }) after settings when it really should have been at the bottom of the document (parent parentheses and brackets need to close each other in the correct spots. All things need to close upon what you want and upon the correct documentation)
+
+5. In productsCtrl, it had ); when it need to have an extra bracket for the proper closing which is }); (Certain parentheses and brackets need to have a opening and a closing to properly define their range)

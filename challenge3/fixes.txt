@@ -1,0 +1,15 @@
+
+1. added ./ before the templateUrl's file path (use ./when going to a file)
+
+2. Home's tmpl was homeTemplate when it should have been homeTmpl in app.js (correct spelling is key)
+3. same as 2 but this time was with settings tmpl
+
+
+4. shoe was spelled wrong sheo instead of shoe (spelling is key)
+
+
+5. changed productId to :id
+
+6. changed index.html product to match the state products (the s was missing)
+
+7. productTmpl was productTemplate
