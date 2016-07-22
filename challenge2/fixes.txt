@@ -1,0 +1,4 @@
+bug: read on line 29 was misspelled
+  fix: changed spelling to match spelling in SightingCtrl
+
+  

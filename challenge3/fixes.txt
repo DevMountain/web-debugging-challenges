@@ -1,0 +1,5 @@
+bug: couldn't resolve state of 'product'
+  fix: needed to be "products" in index.html
+
+bug: Data not loading correctly from service
+  fix: needed to say this.shoeData and this.sockData
