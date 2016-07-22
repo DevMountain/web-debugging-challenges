@@ -13,6 +13,8 @@
 
 ### Scoring
 
-* To win, all bugs must be found, solved and documented.
-* In the case of no one finishing, the winner will be the developer with the most bugs fixed and documented before the hour is up. 
-* In the case of a tie, the winner will be determined by who has the best documentation in their fixes.txt files.
+* 4 Points are possible for every bug found.
+   * Up to 2 points for finding and fixing the bug 
+   * Up to 2 points for proper documentation (See above).
+
+Highest score wins.
