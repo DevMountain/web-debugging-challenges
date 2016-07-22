@@ -1,0 +1,51 @@
+
+
+ What: module ui router could not be found;
+ Steps: looked at index.html to make sure that it was being brought in.
+        found that a wicket was missing on line 31. fixed and still had the same
+        error. looked at my current project with ui router and compared it with app.js
+        saw that  ui router had a dash : ['ui-router'], instead of a dot: ['ui.router'].
+
+Fix: added a ">" on index.html
+      changed "-" to "."
+
+
+What: unexpected end of input on productsCtrl line 9
+Steps:
+looked at productsCtrl line 9
+productsCtrl was missing an '}' on line 9;
+Fix: added "}"
+
+added an '=' between ngApp and 'miniRouting'
+
+
+
+line 31 on the index.html was missing an '>'
+
+the app.js file was just passing a string instead of a string and an object :
+
+// app.js things were  like:
+        .state('dashboard') {
+        templateUrl: './views/dashboard.html',
+        url: '/dashboard/',
+        controller: 'dashCtrl'
+        })
+
+        when they should've been like:
+
+        .state('dashboard', {
+        templateUrl: './views/dashboard.html',
+        url: '/dashboard/',
+        controller: 'dashCtrl'
+        })
+
+
+app.js- moved a }) from line 16 to line 22
+
+product service not injected into controller
+
+
+
+
+
+on app.js  had settingsctrl instead of settingsCtrl

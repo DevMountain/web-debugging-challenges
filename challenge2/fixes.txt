@@ -1,0 +1,36 @@
+what: couldnt find express
+Steps: probably doesnt count as a bug, but just in case
+fix: installed all node packages - npm i
+
+what: /Users/camerongale/Desktop/challenge/web-debugging-challenges/challenge2/node_modules/express/lib/router/route.js:196
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires callback functions but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/camerongale/Desktop/challenge/web-debugging-challenges/challenge2/node_modules/express/lib/router/route.js:196:15)
+    at EventEmitter.app.(anonymous function) [as get] (/Users/camerongale/Desktop/challenge/web-debugging-challenges/challenge2/node_modules/express/lib/application.js:481:19)
+    at Object.<anonymous> (/Users/camerongale/Desktop/challenge/web-debugging-challenges/challenge2/server.js:20:5)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Function.Module.runMain (module.js:575:10)
+    at startup (node.js:160:18)
+    at node.js:456:3
+Steps: looked at server.js line 20
+        noticed that SightingCtrl.raed probably should be read
+        checked ctrl to double check
+Fix: changed raed to read
+
+What: /Users/camerongale/Desktop/challenge/web-debugging-challenges/challenge2/node_modules/mongodb/lib/server.js:242
+        process.nextTick(function() { throw err; })
+                                      ^
+Error: connect ECONNREFUSED 127.0.0.1:27017
+    at Object.exports._errnoException (util.js:1007:11)
+    at exports._exceptionWithHostPort (util.js:1030:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
+
+
+Steps: 27017 is a mongo db port usually tried running mogod;
+Fix: yep, ran mongodb
