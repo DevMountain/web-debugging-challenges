@@ -1,0 +1,12 @@
+Bug Fixes:
+Syntax Errors:
+First bug fixed was found in "js/products/productsCtrl.js" line 9 was missing the closing bracket "}".
+
+Second was located in "js/app.js" where on line 6:22 the "home" route needed a comma instead of a closing ")". Which revealed that this was the
+case for the rest of the $stateProvider classes. After fixing each I simply added a closing bracket and parenthesis to close the config(function).
+
+Third was in the index.html line 31:103 was missing the closer for the script ">". Now I'm off to find the spelling error for the ui.router;
+
+Last was at "js/app.js" line 1:35. Changed 'ui-router' to 'ui.router'. Simple mistake made that one before.
+
+All Clear on my side.
