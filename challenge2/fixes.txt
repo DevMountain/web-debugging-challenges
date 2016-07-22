@@ -1,0 +1,17 @@
+
+
+1. On line 20 of server.js, instead of reverencing the read method, it said raed. (When referencing a method created from another file, you must use the exact spelling)
+
+2. In the SightingCtrl, it's sending back the error when it should be doing result vice versa - It appears this way on all 4 methods (If no errors, should send back the result of the post)
+
+3. Similar to last one, it should send back 200 if successful not 500 (send back correct number things like 200 or 500 statuses)
+
+4. Changed all 500 to 200 (correct status)
+
+5. Took out the frickin ! before the errors with the error handling part in SightingCtrl, instead of !err now its err (!makes it if there is no error, but i was checking that there was)
+
+
+no errors in terminal or actual console left
+
+
+I CAN DO ALL CRUD FUNCTIONS SUCCESSFULLY, TESTED IT IN POSTMAN
