@@ -1,0 +1,8 @@
+Upon firing up server.js it displays 'Cannot find module "cors"' I'll look into the application of the file and
+to see if it's in the package.json file.
+After npm installing the packages. all errors have disappeared. Looks clean but haven't
+checked postman.
+
+
+Syntax Errors:
+In server.js file on line 20:36 fixed spelling error for endpoint from 'raed' to 'read';
