@@ -17,7 +17,10 @@ app.use(cors());
 
 // Endpoints
 app.post('/sighting', SightingCtrl.create);
-app.get('/sighting', SightingCtrl.raed);
+////////////////////////////////////
+//// 3 FIXED SightingCtrl.read ///////
+///////////////////////////////////
+app.get('/sighting', SightingCtrl.read);
 app.put('/sighting/:id', SightingCtrl.update);
 app.delete('/sighting/:id', SightingCtrl.delete);
 
@@ -28,7 +31,10 @@ app.delete('/user/:id', UserCtrl.delete);
 
 // Connections
 var port = 9001;
-var mongoUri = 'mongodb://localhost:27017/mini-birds-mongoose';
+//////////////////////////////
+// 4 REMOVED PORT NUMBER AFTER LOCAL HOST///
+//////////////////////////////
+var mongoUri = 'mongodb://localhost/mini-birds-mongoose';
 
 mongoose.set('debug', true);
 mongoose.connect(mongoUri);

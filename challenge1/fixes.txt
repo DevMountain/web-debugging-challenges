@@ -1,0 +1,21 @@
+
+              FIXES
+
+1 -
+  index.html
+
+2 -
+  app.js
+
+3 -
+  app.js
+
+4 -
+  app.js
+
+5 -
+  app.js
+
+6 -
+  homeCtrl.js
+  
