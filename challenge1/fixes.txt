@@ -1,0 +1,10 @@
+index.html - Added = to ng-app and fixed path on styles.css by adding "./" to the front.
+Fixed path for js folder on each script tag by adding "./" to front of each.
+
+app.js - Removed closing parentheses on each route in app.js added commas to the end of the name of each route
+and added closing bracket to the end of the document so .config function was properly closed.
+
+productsCtrl - added closing "}" bracket so controller was closed properly.
+app.js - Removed "-" from ui.router and replaced with a "." e.g. "ui.router".
+productsCtrl - added productService into dependencies so it could find the productService.
+app.js - settingsCtrl was not in camel case. Fixed spelling.
