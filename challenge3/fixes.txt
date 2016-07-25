@@ -1,0 +1,5 @@
+hometemplate not found
+- checked app.js. templateurl did not match the actual templateurl. corrected.
+  did the same for settings and products.
+could not resolve 'product' form stateProvide
+-
