@@ -1,0 +1,10 @@
+bug: miniRouting is not available
+    fix: i found that  the closing script tag for the ui router was not there and needed to say
+    ui.router in the app.js file instead of ui-router
+
+bug: at each state in app.js file there was an unexpected token "{"
+    fix: i saw that it needed to be inside the parenthasis and then closed at the end.
+    i also found an extra set of closing ')}' which was causing issues.
+
+bug: productsCtrl.js:9 Uncaught SyntaxError: Unexpected token )
+    fix needed a closing "}" right befor that token

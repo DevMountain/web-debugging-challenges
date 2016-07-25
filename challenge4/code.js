@@ -22,7 +22,7 @@ function randomArray (arr) {
   }
   var newArr = []
   while(arr.length >= 0){
-    newArr.push(arr.slice(randomNumber(), 1)[0])
+    newArr.push(arr.slice(randomNumber(), 1)[1])
   }
   return newArr
 }

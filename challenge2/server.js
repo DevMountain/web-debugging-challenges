@@ -8,6 +8,15 @@ var mongoose = require('mongoose');
 var SightingCtrl = require('./controllers/SightingCtrl');
 var UserCtrl = require('./controllers/UserCtrl');
 
+var mongoUri = 'mongodb://localhost:27017/mini-birds-mongoose';
+
+mongoose.set('debug', true);
+mongoose.connect(mongoUri);
+mongoose.connection.once('open', function() {
+  console.log('Connected to MongoDB at ', mongoUri);
+});
+
+
 // Express
 var app = express();
 
@@ -17,7 +26,7 @@ app.use(cors());
 
 // Endpoints
 app.post('/sighting', SightingCtrl.create);
-app.get('/sighting', SightingCtrl.raed);
+app.get('/sighting', SightingCtrl.read);
 app.put('/sighting/:id', SightingCtrl.update);
 app.delete('/sighting/:id', SightingCtrl.delete);
 
@@ -28,13 +37,6 @@ app.delete('/user/:id', UserCtrl.delete);
 
 // Connections
 var port = 9001;
-var mongoUri = 'mongodb://localhost:27017/mini-birds-mongoose';
-
-mongoose.set('debug', true);
-mongoose.connect(mongoUri);
-mongoose.connection.once('open', function() {
-  console.log('Connected to MongoDB at ', mongoUri);
-});
 
 app.listen(port, function() {
   console.log('Listening on port ', port);
