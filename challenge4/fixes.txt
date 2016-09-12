@@ -1,0 +1,2 @@
+Fixed the loop getting repeated by switching the direction the for loop went
+Did a basic sort to swap positions between random index and present index

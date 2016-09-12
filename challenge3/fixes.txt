@@ -1,0 +1,6 @@
+changed 'product' to 'products' in index subroutes (line 17 and 18)
+misspelled shoe in productsCtrl
+changed var to THIS inside service
+template url's were wrong, switch template to tmpl (lines 8, 14, 18)
+Missing semicolons
+changed productid to id in router (line 17)
