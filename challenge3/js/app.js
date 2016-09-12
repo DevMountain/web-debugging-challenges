@@ -5,19 +5,19 @@ angular.module("miniRouting", ['ui.router'])
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: 'js/home/homeTemplate.html',
+            templateUrl: 'js/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
         .state('settings', {
             url: '/settings',
-            templateUrl: 'js/settings/settingsTemplate.html',
+            templateUrl: 'js/settings/settingsTmpl.html',
             controller: 'settingsCtrl'
         })
          .state('products', {
-            url: '/products/:productid',
-            templateUrl: 'js/products/productTemplate.html',
+            url: '/products/:id',
+            templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl'
         })
-    
-    
+
+
 })

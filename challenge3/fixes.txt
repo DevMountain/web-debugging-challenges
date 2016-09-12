@@ -1,0 +1,4 @@
+Paxton Bigler
+
+The names of the html templates in app.js were wrong
+the sref in index.html went to 'product' instead of products
