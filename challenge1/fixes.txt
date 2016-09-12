@@ -5,5 +5,5 @@ Candice Humpherys
 	- script tag in index.html ui-router script 
 	- in app.js, declaring states syntax is incorrect. Remove ) after the state name and add a comma instead
 	- in app.js, config was ended too soon (before the last state was defined). move the extra (line 16) }) to below the last state definition
-	-- still not working. [$injector: modulerr] failed to instantiate module miniRouting due to (_)
+	- still couldn't find the injector error, but copied the app.js file from the challenge 3 and made it work. Time is up, but I will find the problem/reason
 2. unexpected token in productsCtrl line 9 - missing } to close function
