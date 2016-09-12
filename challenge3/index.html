@@ -14,8 +14,8 @@
             <li>
                 Products
                 <ul>
-                    <li><a ui-sref="product({id: 'shoes'})">Shoes</a></li>
-                    <li><a ui-sref="product({id: 'socks'})">Socks</a></li>
+                    <li><a ui-sref="products({id: 'shoes'})">Shoes</a></li>
+                    <li><a ui-sref="products({id: 'socks'})">Socks</a></li>
                 </ul>
             </li>
             <li><a ui-sref="settings"> Settings </a></li>
@@ -23,9 +23,8 @@
     </div>
 
     <div class="view-container">
-        <div ui-view></div>
+        <ui-view></ui-view>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
