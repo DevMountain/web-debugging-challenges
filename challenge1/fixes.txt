@@ -1,0 +1,5 @@
+Paxton Bigler (12:26 PM, just read that we need to document the debugging)
+
+There was a missing arrow on the script tag for angular (I think... it was so long ago),
+Also, the formatting of the routes in app.js was wrong.
+And ng-app in index.html didn't have an '='
