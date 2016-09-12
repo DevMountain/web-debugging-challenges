@@ -1,0 +1,13 @@
+Name: James Lemire
+
+#1 - Infinite while loop
+--(code.js) On line 24, infinite while loop breaking page
+FIX: for(var i = 0; i < arr.length; i++) {
+
+#2 - Change slice to splice
+--(code.js) On line 26, slice should be splice
+FIX: newArr.push(arr.splice(randomNumber(), 1)[0])
+
+#3 - Return gives undef sometimes
+--(code.js) On line 21, change random algorithm
+FIX: return ( (Math.random() * arr.length - 1) + 1 )

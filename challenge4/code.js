@@ -18,11 +18,12 @@ var students = [
 
 function randomArray (arr) {
   function randomNumber () {
-    return Math.floor(Math.random() * arr.length)
+    return ( (Math.random() * arr.length - 1) + 1 )
   }
   var newArr = []
-  while(arr.length >= 0){
-    newArr.push(arr.slice(randomNumber(), 1)[0])
+  for(var i = 0; i < arr.length; i++) {
+    console.log('STUDENTS', arr);  
+    newArr.push(arr.splice(randomNumber(), 1)[0])
   }
   return newArr
 }

@@ -16,19 +16,19 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Endpoints
-app.post('/sighting', SightingCtrl.create);
-app.get('/sighting', SightingCtrl.raed);
-app.put('/sighting/:id', SightingCtrl.update);
-app.delete('/sighting/:id', SightingCtrl.delete);
-
-app.post('/user', UserCtrl.create);
-app.get('/user', UserCtrl.read);
-app.put('/user/:id', UserCtrl.update);
-app.delete('/user/:id', UserCtrl.delete);
+// app.post('/sighting', SightingCtrl.create);
+// app.get('/sighting', SightingCtrl.raed);
+// app.put('/sighting/:id', SightingCtrl.update);
+// app.delete('/sighting/:id', SightingCtrl.delete);
+//
+// app.post('/user', UserCtrl.create);
+// app.get('/user', UserCtrl.read);
+// app.put('/user/:id', UserCtrl.update);
+// app.delete('/user/:id', UserCtrl.delete);
 
 // Connections
 var port = 9001;
-var mongoUri = 'mongodb://localhost:27017/mini-birds-mongoose';
+var mongoUri = 'mongodb://localhost:9001/miniBirdsMongoose';
 
 mongoose.set('debug', true);
 mongoose.connect(mongoUri);
