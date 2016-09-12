@@ -1,0 +1,23 @@
+Preston Mecham
+
+Bug1: To fix the settings link, I looked at the routes setup and checked
+to make sure the path was correct for the template and discovered the file was
+spelled wrong, I then fixed the home and product template links which had the same
+spelling error.
+
+Bug2: I started trying to figure out why the product link wasn't working, i first
+compared the syntax with the working links on index.html page, then I went
+into the routing section of the app.config and looked for errors and the code.  I found a
+extra s in the state name which i removed and this caused the links to show up .
+
+Bug3: While comparing the productsCtrl with the ProductSrvc I saw a typo on the controller for shoe
+data and corrected it.
+
+Bug4: I discovered that the parameters for products were not being passed by console logging $stateParams
+and googled proper syntax for passing params in ui-sref and changed id to product id and the parameter started to get passed.
+
+Bug5: product type was requesting a non existent property of stateparams.  I had to change it to
+productid from id.  This was obvious after step 4.
+
+Bug6: productService was not returning anything, this was obvious, I used google to
+refersh my memory on how this works, created my functions and returned them through the service.

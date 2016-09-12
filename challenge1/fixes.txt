@@ -1,0 +1,8 @@
+Name: Preston Mecham
+
+Bug1: Missing } on productsCtrl.js line 9.  Looked at console, and saw the location of the error and added }.
+Bug2: Missing > tag on ui-router script tag.  I noticed that the </script> tag was the wrong color and looked through
+the line to find the error.
+Bug3: Improper Syntax on app.js page. I googled stateProvider to see the proper syntax and discovered the state name
+should have a comma then a curly bracket followed by the state details.  The config portion was also missing its closing brackets
+)}
