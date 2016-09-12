@@ -1,0 +1,14 @@
+Matt Tran
+
+Fixed routes in app.js. All 3 routes had template spelled out when file name had abbreviation tmpl.
+ ex: templateUrl: 'js/settings/settingsTemplate.html' => templateUrl: 'js/settings/settingsTmpl.html'
+
+Line 17 of app.js products route was setup to look for a param called productsid, but ui-sref link on
+index.html param was set to id. Changed param in route to match
+id.
+ url: '/products/:productid' => url: '/products/:id'
+
+There's a duplicate of <script src="js/app.js"></script> on index.html. Removed one
+
+Added 's' from ui-sref product link in index.html to be consistent with naming of productsCtrl,
+  and productsService

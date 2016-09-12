@@ -1,0 +1,6 @@
+Matt Tran
+
+Fixed typo on line 20 of Server.js
+  app.get('/sighting', SightingCtrl.read) => app.get('/sighting', SightingCtrl.raed)
+
+SKIPPING THE REST OF THIS BECAUSE IT SEEMS TO BE WRITTEN IN MONGO DB

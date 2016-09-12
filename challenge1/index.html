@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app"miniRouting">
+<html lang="en" ng-app="miniRouting">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +14,8 @@
             <li>
                 Products
                 <ul>
-                    <li><a ui-sref="products({id: 'shoes'})">Shoes</a></li>
-                    <li><a ui-sref="products({id: 'socks'})">Socks</a></li>
+                  <li><a ui-sref="product({id:'shoes'})">Shoes</a></li>
+                  <li><a ui-sref="product({id:'socks'})">Socks</a></li>
                 </ul>
             </li>
             <li><a ui-sref="settings"> Settings </a></li>
@@ -28,7 +28,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"</script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
     <script src="js/app.js"></script>
     <script src="js/home/homeCtrl.js"></script>
     <script src="js/products/productsCtrl.js"></script>

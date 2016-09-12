@@ -1,0 +1,23 @@
+Matt Tran
+
+Placed missing } on line 9 of js/products/productsCtrl.js
+
+Replaced parans that were placed incorrectly on the states js/app.js
+
+Placed missing equal sign on html
+from ng-app'miniRouting' to ng-app='miniRouting'
+
+angular ui router was injected incorrectly in App.js Changed ['ui-router'])
+ to ['ui.router'])
+
+Added  $urlRouterProvider.otherwise('/') to routes. Good practice for error handling
+
+Incorrect CDN link was used for script tag src for ui.routing. Replaced with proper CDN:
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+Capitalized C in "controller: 'settingsCtrl'" in line 13 of App.js
+
+Injected productService into productsCtrl.js
+  angular.module('miniRouting').controller("productsCtrl", function($scope, $stateParams, productService)...
+
+Removed 's' from ui-sref product link in index.html
