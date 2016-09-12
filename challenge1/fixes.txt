@@ -1,0 +1,15 @@
+Steven Isbell
+
+The first bug was a missing closing > on the script tag of the ui-router in the index.html file. It said the module wasn't loading correctly so that was the first place I looked.
+
+Then the ui-router declaration was wrong in the app.js file. It needed to be ui.router.
+
+Then the routing had several issues in the app.,js file. There were brackets missing, and the parentheses were misplaced on the .state's. This was found by just looking at all the linter issues in the file...and seeing that the parentheses were closed off before the object was instantiated.
+
+There was no equal sign with the ng-app declaration. It wasn't recognizing the routing feature so I looked there.
+
+The Controller for products was missing camel case in the routes declaration, i found that by simply checking the page for errors.
+
+The service wasn't defined in the product controller.
+
+The routing now works and there are no errors in the console.

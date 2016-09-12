@@ -1,0 +1,12 @@
+template names were incorrect in the file paths in app.js. Changed to correct naming.
+
+shoeData was misspelled in the productCtrl. I wasl ooking there fora seperate issue and found that.
+
+
+the product state couldnt be resolved, so I checked what state it was trying to load. There was an s missing from the ui-sref for the products.
+
+the data in the service was labeled with variables instead of this. it wasn't bringing data in and that's where the flow took me.
+
+The url for products had productid instead of just id being passed in. The routing was failing when switching between the two routes so I checked what was being passed into the url.
+
+all links work and data populates appropriately.
