@@ -24,6 +24,7 @@ angular.module('miniRouting')
     }
   ];
 
+
   var sockData = [
     {
       type: 'Stance',
@@ -41,4 +42,19 @@ angular.module('miniRouting')
       size: 'L'
     },
   ];
+
+  var getShoeData = function() {
+    return shoeData;
+  }
+
+   var getSockData = function () {
+    return sockData;
+  }
+
+  return {
+    getSocks: getSockData,
+    getShoes: getShoeData
+  }
+
+
 });

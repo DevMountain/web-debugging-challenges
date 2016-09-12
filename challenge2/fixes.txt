@@ -1,0 +1,3 @@
+Preston Mecham
+
+Bug1: Saw line 20 referenced in bash, looked at the line and fixed spelling error of read
