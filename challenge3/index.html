@@ -14,8 +14,8 @@
             <li>
                 Products
                 <ul>
-                    <li><a ui-sref="product({id: 'shoes'})">Shoes</a></li>
-                    <li><a ui-sref="product({id: 'socks'})">Socks</a></li>
+                    <li><a ui-sref="products({id: shoes.id})">Shoes</a></li>
+                    <li><a ui-sref="products({id: socks.id})">Socks</a></li>
                 </ul>
             </li>
             <li><a ui-sref="settings"> Settings </a></li>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="view-container">
-        <div ui-view></div>
+        <ui-view></ui-view>
     </div>
 
 
