@@ -1,3 +1,5 @@
 Page is not loading. Which means a function in the code.js file is on a infinite loop. Gonna throw some of them in Repl.it to
 see what the issue is.
-It would appear I ran out of time. I'm confident it is located in the code.js file.
+
+"while(arr.length >= 0){""  will an infinite loop because it will always be larger than 0. it only needed to loop until our new array was the same length as the initial array
+Also the second argument of the slice method needed to be the index after the random number.
