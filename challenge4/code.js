@@ -14,17 +14,19 @@ var students = [
 , 'Stephen'
 , 'David'
 , 'Mark'
-]
+];
 
 function randomArray (arr) {
   function randomNumber () {
     return Math.floor(Math.random() * arr.length)
   }
-  var newArr = []
-  while(arr.length >= 0){
-    newArr.push(arr.slice(randomNumber(), 1)[0])
+  var newArr = [];
+  var i = arr.length;
+  while(i > 0){
+    newArr.push(arr.splice(randomNumber(), 1).join(''));
+    i--;
   }
-  return newArr
+  return newArr;
 }
 
 console.log(randomArray(students));

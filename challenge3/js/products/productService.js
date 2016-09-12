@@ -1,7 +1,7 @@
 angular.module('miniRouting')
 
 .service('productService', function(){
-  var shoeData = [
+  this.shoeData = [
     {
       type: 'Nike',
       color: 'Red',
@@ -24,7 +24,7 @@ angular.module('miniRouting')
     }
   ];
 
-  var sockData = [
+  this.sockData = [
     {
       type: 'Stance',
       color: 'Red',
