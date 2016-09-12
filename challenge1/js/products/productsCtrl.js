@@ -6,4 +6,4 @@ angular.module('miniRouting').controller("productsCtrl", function($scope, $state
     } else {
         $scope.productData = productService.sockData;
     }
-);
+});
