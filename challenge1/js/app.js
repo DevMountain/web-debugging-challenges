@@ -1,22 +1,20 @@
-angular.module("miniRouting", ['ui-router'])
+angular.module("miniRouting", ['ui.router'])
+	.config(['$stateProvider', '$urlRouterProvider', function($stateProvider) {
 
-.config(function($stateProvider){
-
-    $stateProvider
-        .state('home') {
+    	$stateProvider
+	 	.state('home')({
             url: '/',
             templateUrl: 'js/home/homeTmpl.html',
             controller: 'homeCtrl'
         })
-        .state('settings') {
+      .state('settings') ({
             url: '/settings',
             templateUrl: 'js/settings/settingsTmpl.html',
             controller: 'settingsctrl'
-        })            
         })
-         .state('products') {
+   	.state('products')({
             url: '/products/:id',
             templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl'
-        })
-    
+        });
+	 }]);

@@ -1,6 +1,3 @@
-angular.module('miniRouting').controller("homeCtrl", function($scope){
-    
+angular.module("miniRouting").controller("homeCtrl", function($scope){
 
-
-    
 });
