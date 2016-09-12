@@ -1,0 +1,9 @@
+Candice Humpherys
+
+1. miniRouting not available: 
+	- in index.html, ng-app directive was missing the =;
+	- script tag in index.html ui-router script 
+	- in app.js, declaring states syntax is incorrect. Remove ) after the state name and add a comma instead
+	- in app.js, config was ended too soon (before the last state was defined). move the extra (line 16) }) to below the last state definition
+	-- still not working. [$injector: modulerr] failed to instantiate module miniRouting due to (_)
+2. unexpected token in productsCtrl line 9 - missing } to close function

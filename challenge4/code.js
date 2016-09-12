@@ -16,13 +16,17 @@ var students = [
 , 'Mark'
 ]
 
+
 function randomArray (arr) {
+  console.log(arr.length)
   function randomNumber () {
     return Math.floor(Math.random() * arr.length)
   }
+	
   var newArr = []
-  while(arr.length >= 0){
-    newArr.push(arr.slice(randomNumber(), 1)[0])
+  while(newArr.length<= arr.length) {
+  	var x = randomNumber();
+    newArr.push(arr.slice(x, x+1)[0])
   }
   return newArr
 }

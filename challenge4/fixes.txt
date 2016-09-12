@@ -1,0 +1,5 @@
+Candice Humpherys
+
+1. change while condition to be until the newArr is the same length as the original
+2. define x to be the result of calling randomNumber() so we can keep this value.
+3. with slice, the begin index is x, and the end index is x+1 so we take grab one element in the array
