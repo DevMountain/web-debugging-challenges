@@ -1,0 +1,57 @@
+Name: James Lemire
+
+#1 - Missing ending > tag
+--(index.html) On line 31, missing > to close <script>
+FIX: <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+#2 - Additional closing tag
+--(app.js) On line 15, additional closing tag, removed it
+FIX: removed it
+
+#3 - Missing closing symbols
+--(app.js) On line 21, need to close config
+FIX:  added }); on line 21
+
+#4 - Home state bad syntax
+--(app.js) On line 6, curly should be inside ()
+FIX:    .state('home', {
+            url: '/',
+            templateUrl: 'js/home/homeTmpl.html',
+            controller: 'homeCtrl'
+        })
+
+#5 - Settings state bad syntax
+--(app.js) On line 11, curly should be inside ()
+FIX:    .state('settings', {
+            url: '/settings',
+            templateUrl: 'js/settings/settingsTmpl.html',
+            controller: 'settingsctrl'
+        })
+
+#6 - Products state bad syntax
+--(app.js) On line 16, curly should be inside ()
+FIX:    .state('products', {
+            url: '/products/:id',
+            templateUrl: 'js/products/productTmpl.html',
+            controller: 'productsCtrl'
+        })
+
+#7 - Bad injection of ui-router
+--(app.js) On line 1, - should be .
+FIX: angular.module("miniRouting", ['ui.router'])
+
+#8 - Bad closing of productsCtrl
+--(productsCtrl.js) On line 9, missing )
+FIX: });
+
+#9 - Bad app injection
+--(index.html) On line 2, missing = sign
+FIX: <html lang="en" ng-app="miniRouting">
+
+#10 - Missing productService injection
+--(productsCtrl.js) On line 1, missing injection for productService
+FIX: angular.module('miniRouting').controller("productsCtrl", function($scope, $stateParams, productService) {
+
+#11 - Bad controller call
+--(app.js) On line 14, settingsctrl doesn't exist should be settingsCtrl
+FIX: controller: 'settingsCtrl'

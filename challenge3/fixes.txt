@@ -1,0 +1,45 @@
+Name: James Lemire
+
+#1 - Bad ui-sref
+--(index.html) On line 17, ui-sref points to product, should be products
+FIX: <li><a ui-sref="products({id: 'shoes'})">Shoes</a></li>
+
+#2 - Bad ui-sref
+--(index.html) On line 18, ui-sref points to product, should be products
+FIX: <li><a ui-sref="products({id: 'socks'})">Socks</a></li>
+
+#3 - Bad ui-sref param
+--(index.html) On line 17, ui-sref param is id, should be productid
+FIX: <li><a ui-sref="products({productid: 'shoes'})">Shoes</a></li>
+
+#4 - Bad ui-sref param
+--(index.html) On line 18, ui-sref param is id, should be productid
+FIX: <li><a ui-sref="products({productid: 'socks'})">Socks</a></li>
+
+#5 - Bad template injection
+--(app.js) On line 18, templateUrl points to a non-existent file
+FIX: templateUrl: 'js/products/productTmpl.html',
+
+#6 - Bad variable call
+--(productsCtrl) On line 5, sheoData is a non-existent variable
+FIX: $scope.productData = productService.shoeData;
+
+#7 - Bad variable
+--(productService) On line 4, shoeData should be set on the service not var
+FIX: this.shoeData = [
+
+#8 - Bad variable
+--(productService) On line 27, sockData should be set on the service not var
+FIX: this.sockData = [
+
+#9 - Checking for wrong param
+--(productsCtrl) On line 3, looking for non-existent param
+FIX: var productType = $stateParams.productid;
+
+#10 - Bad template injection
+--(app.js) On line 8, templateUrl points to a non-existent file
+FIX: templateUrl: 'js/home/homeTmpl.html',
+
+#11 - Bad template injection
+--(app.js) On line 13, templateUrl points to a non-existent file
+FIX: templateUrl: 'js/settings/settingsTmpl.html',
