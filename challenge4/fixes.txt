@@ -1,0 +1,5 @@
+The while loop was running infinitely because it was set to >= 0 instead of just > 0.
+
+The array should be splicing instead of slicing.
+
+The code works in replit, randomizing the array and logging it every time.
