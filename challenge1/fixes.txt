@@ -1,0 +1,5 @@
+End tag missing for script, line 31 index.html
+Brackets missing from several controllers in several places
+config.js had unnecessary semicolons and missing commas
+ng-app set on html instead of body
+changed from var to this inside productservice

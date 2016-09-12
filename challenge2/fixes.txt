@@ -1,0 +1,3 @@
+npm installed
+
+broke with mongo errors, didn't have time to fix.
