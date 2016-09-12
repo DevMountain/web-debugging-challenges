@@ -1,0 +1,10 @@
+Syntax Errors:
+
+In "js/app.js" all .state templateUrls were misspelled. Felt the easiest fix was
+to just change the spelling from homeTemplate.html to match the actual file name in reference.
+
+After the fixes only error from routing is unable to resolve 'product from state''. Let's have a look:
+product.html is fine.
+Oh my goodness it was a simple misspelling of "products" instead of "product" in 'js/app.js' line 16:25.
+ All clear in console. On to the last one.
+Also needed to match the StateParam to jus '/":id"' in app.js
