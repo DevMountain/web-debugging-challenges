@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './mainStreetAuto.svg';
+import logo from './mainStreetAutosvg';
 import axios from 'axios';
 import './App.css';
 
@@ -29,9 +29,9 @@ class App extends Component {
   }
 
   getVehicles() {
-    this.axios.get('https://joes-autos.herokuapp.com/api/vehicles').then(results => {
+    axios.get('https://joes-autos.herokuapp.com/api/vehicles').then(results => {
       toast.success("Successfully got Vehicles.");
-      this.setState({ 'vehiclesToDisplay': results.data });
+      this.setState({ 'vehiclesToDisplay': results });
     }).catch(() => toast.error("Failed at fetching Vehicles"));
   }
 
@@ -43,7 +43,7 @@ class App extends Component {
   sellCar(id) {
     axios.delete(`https://joes-autos.herokuapp.com/api/vehicles/${id}`).then(results => {
       toast.success("Successfully sold car.");
-      this.state({ 'vehiclesToDisplay': results.data.vehicles });
+      this.setState({ 'vehiclesToDisplay': results.data.vehicles });
     }).catch(() => toast.error("Failed at selling car."));
   }
 
@@ -71,13 +71,13 @@ class App extends Component {
   addCar() {
     let newCar = {
       make: this.refs.make.value,
-      model: this.refs.modle.value,
+      model: this.refs.model.value,
       color: this.refs.color.value,
       year: this.refs.year.value,
       price: this.refs.price.value
     };
 
-    axios.post('https://joes-autos.herokuapp.com/api/vehicles', newCar).then(results => {
+    axios.post('https://joes-autos.herokuapp.com/api/vechicles', newCar).then(results => {
       toast.success("Successfully added vehicle.");
       this.setState({ vehiclesToDisplay: results.data.vehicles });
     }).catch(() => toast.error('Failed at adding new vehicle.'));
@@ -141,12 +141,12 @@ class App extends Component {
           </button>
 
           <button className='btn btn-sp'
-            onClick={() => updatePrice('down', v.id)}>
+            onClick={() => this.updatePrice('down', v.id)}>
             Decrease Price
           </button>
 
           <button className='btn btn-sp'
-            onClick={() => this.sellCar(v.id)}>
+            onclick={() => this.sellCar(v.id)}>
             SOLD!
           </button>
 

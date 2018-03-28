@@ -1,0 +1,1 @@
+Bugs will be found in vehicle code only.  Nothing related to buyers
